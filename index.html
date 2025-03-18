@@ -17,7 +17,7 @@
             "query-input": "required name=search_term_string"
           }
         }
-        </script>
+    </script>
     <style>
         /* Основные стили для body */
         body {
@@ -173,7 +173,73 @@
         .social-share a:hover {
             background-color: #16a085;
         }
-        
+
+        /* Хлебные крошки */
+        .breadcrumbs {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .breadcrumbs a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+
+        /* Форма подписки */
+        .subscribe-form {
+            margin-top: 40px;
+        }
+
+        .subscribe-form input[type="email"] {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .subscribe-form button {
+            padding: 10px 20px;
+            background-color: #1abc9c;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .subscribe-form button:hover {
+            background-color: #16a085;
+        }
+
+        /* Отзывы */
+        .reviews {
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        .review {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .review p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .review span {
+            font-size: 0.9rem;
+            color: #777;
+        }
     </style>
 </head>
 <body>
@@ -192,6 +258,11 @@
         </div>
     </header>
     <div class="container">
+        <!-- Хлебные крошки -->
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a> &gt; <span>Справочник по городам Беларуси</span>
+        </div>
+
         <h1>Справочник по городам Беларуси</h1>
         <h2>Для всех и всего</h2>
         <p class="subtitle">Ваш надежный источник информации</p>
@@ -220,6 +291,28 @@
                 <h3>Полоцк</h3>
                 <p>Древнейший город Беларуси, колыбель белорусской государственности. Откройте для себя Полоцк!</p>
                 <a href="polotsk.html">Подробнее</a>
+            </div>
+        </div>
+
+        <!-- Форма подписки -->
+        <div class="subscribe-form">
+            <h2>Подпишитесь на наши новости</h2>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Введите ваш email" required>
+                <button type="submit">Подписаться</button>
+            </form>
+        </div>
+
+        <!-- Отзывы -->
+        <div class="reviews">
+            <h2>Отзывы</h2>
+            <div class="review">
+                <p>"Отличный справочник! Очень полезная информация."</p>
+                <span>- Иван Иванов</span>
+            </div>
+            <div class="review">
+                <p>"Спасибо за интересные статьи о городах Беларуси!"</p>
+                <span>- Анна Петрова</span>
             </div>
         </div>
 
